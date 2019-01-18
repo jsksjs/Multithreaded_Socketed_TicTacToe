@@ -1,3 +1,3 @@
 # Multithreaded_Socketed_TicTacToe
-This is my final project for CS451, originally in a private GitLab repo.
+Final project for my Computer Operating Systems course, originally held in a private GitLab repo.
 The goal was to create a multithreaded, socketed game of tic tac toe.
