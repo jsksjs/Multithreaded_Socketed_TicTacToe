@@ -67,7 +67,7 @@ public class Player {
                                             System.out.println("Invalid space.");
                                     }
                                 }
-                                // computer just needs a random space to communicate
+                            // computer just needs a random space to communicate
                             } else {
                                 row = (int) (Math.random() * b.getLength());
                                 col = (int) (Math.random() * b.getLength());
@@ -86,7 +86,7 @@ public class Player {
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                    // print that it is the other player's turn
+                // print that it is the other player's turn
                 } else if (human && status.equals("other")) {
                     System.out.println("~~~Other player's turn.~~~");
                 }

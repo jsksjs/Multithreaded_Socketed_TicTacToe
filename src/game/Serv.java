@@ -92,8 +92,8 @@ public class Serv {
                         }
                     }
                     System.exit(0);
-				// end condition: game is tied
-				// tell all players that the game is tie and end the game, close everything and exit
+                // end condition: game is tied
+                // tell all players that the game is tie and end the game, close everything and exit
                 } else if (b.full()) {
                     System.out.println(LocalDateTime.now() + " : Tie.");
                     for (ObjectOutputStream o : outputs) {
@@ -110,7 +110,7 @@ public class Serv {
                         }
                     }
                     System.exit(1);
-				// tell the current player that their turn is over
+                // tell the current player that their turn is over
                 } else{
                     out.reset();
                     out.writeObject("other");
