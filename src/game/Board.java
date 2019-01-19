@@ -43,14 +43,14 @@ public class Board implements Serializable {
             pointCount[board.length + col] += 1;
             if (row == col)
                 pointCount[board.length * 2] += 1;
-            if (12 - col == row)
+            if ((size-1) - col == row)
                 pointCount[board.length + 1] += 1;
         } else if (playerNum == 1) {
             pointCount[row] -= 1;
             pointCount[board.length + col] -= 1;
             if (row == col)
                 pointCount[board.length * 2] -= 1;
-            if (12 - col == row)
+            if ((size-1) - col == row)
                 pointCount[board.length + 1] -= 1;
         }
         return won();
