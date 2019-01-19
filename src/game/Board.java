@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 public class Board implements Serializable {
     private char[][] board;
-    private int[] pointCount = new int[28];
+    private int[] pointCount;
 
     /**
      * Constructs a board with a given size (will be 13 for this project)
@@ -16,6 +16,7 @@ public class Board implements Serializable {
      */
     public Board(int size) {
         board = new char[size][size];
+		pointCount = new int[size*2+2];
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
                 board[i][j] = '.';
